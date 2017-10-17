@@ -2,23 +2,20 @@
  * Globals
  */
 
+ /* Selection */
+ ::selection {
+  background: yellow; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #yellow; /* Gecko Browsers */
+}
+
 /* Links */
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
 
 /*
  * Base structure
@@ -27,7 +24,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #E6B799;
+  background-color: #21242B;
+  /* font-family: Courier New, Courier, monosp  ace; */
 }
 body {
   color: #fff;
@@ -118,6 +116,12 @@ body {
   font-weight: bold;
 }
 
+/*
+ * Buttons
+ */
+.button {
+  margin: 10px;
+}
 
 /*
  * Footer
@@ -126,7 +130,6 @@ body {
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
-
 
 /*
  * Affix and center
